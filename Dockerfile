@@ -71,6 +71,4 @@ RUN gem install bundler
 RUN	curl -JLO https://download.srcclr.com/srcclr-$(curl -sf https://download.srcclr.com/LATEST_VERSION)-linux.tgz && \
 	tar -xzf srcclr-*.tgz && rm srcclr-*.tgz && mv srcclr-* srcclr
 
-ENTRYPOINT ["/bin/bash"]
-
-CMD ["help"] 
+ENTRYPOINT ["sleep","infinity"]
