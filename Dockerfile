@@ -66,6 +66,9 @@ RUN pip3 install pipenv
 # Ruby
 #Setup bundler
 RUN gem install bundler
+RUN  mkdir -p /home/app/.srcclr/scans/ && \
+        npm -g install shrinkwrap && \
+	rm -rf /var/lib/apt/lists/*
 
 # Install srcclr 
 RUN	curl -JLO https://download.srcclr.com/srcclr-$(curl -sf https://download.srcclr.com/LATEST_VERSION)-linux.tgz && \
