@@ -27,7 +27,7 @@ RUN yum makecache --timer \
       hostname \
       python3 \
       python2 \
-      java \
+      java-openjdk \
       maven \
       npm \
       gem \
